@@ -1,0 +1,22 @@
+.nav-header__logo {
+	font-family: Raleway;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--accent-color);
+
+	margin-right: 93px;
+	padding-top: 24px;
+	padding-bottom: 23px;
+}
+
+.nav-header__logo--accent {
+	color: var(--text-color-main);
+	padding: 24px 0;
+
+	transition: color var(--animation-duration) var(--timing-function);
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+}

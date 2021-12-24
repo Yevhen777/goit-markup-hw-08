@@ -1,0 +1,60 @@
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.section-info {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.adventages {
+	width: 270px;
+	height: 120px;
+	background: #f5f4fa;
+	border-radius: 4px;
+	margin-bottom: 30px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.list-info {
+	display: flex;
+}
+
+.item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.title-text {
+	margin-bottom: 10px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--text-color-main);
+}
+.item-text {
+	margin-bottom: 10px;
+}
+.list-info__benefits:not(:last-child) {
+	margin-right: 30px;
+}
+
+.title-text__info {
+	width: 270px;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--text-color-secondary);
+}
