@@ -305,6 +305,10 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-img {
+  margin-bottom: 30px;
+}
+
 .icon-list-section {
   display: -webkit-box;
   display: -ms-flexbox;
