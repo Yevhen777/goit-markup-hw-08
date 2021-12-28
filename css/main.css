@@ -687,20 +687,46 @@ body {
 }
 
 .btn-all {
-  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .btn-all {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn-all {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-all {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-btn {
+  margin-left: 8px;
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-btn {
+    margin-top: 15px;
+  }
 }
 
 .portfolio-btn:last-child {
