@@ -380,6 +380,12 @@ body {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1199px) {
+  .section-heading {
+    display: none;
+  }
+}
+
 .section-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -629,6 +635,10 @@ body {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+}
+
+.clients-list .title-hedding {
+  margin-bottom: 50px;
 }
 
 .clients-list .clients-list-text__icon {
