@@ -34,7 +34,7 @@
 	}
 }
 .footer-container__logo {
-	@media screen and (min-width: 480px) and (max-width: 767px) {
+	@media screen and (max-width: 767px) {
 		text-align: center;
 	}
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -119,7 +119,6 @@
 }
 .icon-footer {
 	@media screen and (min-width: 768px) {
-		margin-left: auto;
 		margin-top: 0;
 		margin-right: 0;
 	}
@@ -155,7 +154,7 @@
 	margin-bottom: 20px;
 }
 .footer-icon-list-svg {
-	@media screen and (min-width: 480px) and (max-width: 767px) {
+	@media screen and (max-width: 767px) {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -217,14 +216,16 @@
 	letter-spacing: 0.03em;
 	color: var(--background-color);
 	text-transform: uppercase;
+
+	@media screen and (max-width: 1199px) {
+		text-align: center;
+	}
 }
 
 .subscription-form__input {
-	@media screen and (min-width: 480px) {
-		width: 450px;
-	}
-
-	@media screen and (min-width: 768px) and (max-width: 1199px) {
+	@media screen and (max-width: 1199px) {
+		max-width: 450px;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -246,7 +247,7 @@
 }
 
 .subscription-form__button {
-	@media screen and (min-width: 480px) and (max-width: 767px) {
+	@media screen and (max-width: 767px) {
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 20px;

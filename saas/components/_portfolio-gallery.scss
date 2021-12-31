@@ -37,9 +37,9 @@
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 	transition: box-shadow var(--animation-duration) var(--timing-function);
 }
-// .portfolio-img-source {
-// 	width: 100%;
-// }
+.portfolio-img-source {
+	width: 100%;
+}
 
 .container-item-title {
 	margin-left: 0;
@@ -66,54 +66,61 @@
 		margin: -15px;
 	}
 }
-.portfolio-list {
+.portfolio-img {
 	@media screen and (max-width: 767px) {
-		width: 480px;
 		background: #ffffff;
-		border: 1px solid #eeeeee;
 		box-sizing: border-box;
 	}
 	@media screen and (min-width: 768px) {
-		width: 354px;
-
 		background: #ffffff;
-		border: 1px solid #eeeeee;
 		box-sizing: border-box;
 		display: flex;
 		flex-wrap: wrap;
 	}
-	@media screen and (min-width: 1200px) {
-		width: 370px;
+}
+.portfolio-list {
+	@media screen and (min-width: 480px) {
 		margin: 15px;
-		width: calc(100% / 3 - 30px);
+		width: 450px;
 		background: #ffffff;
 		border: 1px solid #eeeeee;
 		box-sizing: border-box;
+	}
+
+	@media screen and (max-width: 767px) {
+		margin: 15px;
+	}
+	@media screen and (min-width: 768px) {
+		margin: 15px;
+		width: calc((100% - 60px) / 2);
+	}
+	@media screen and (min-width: 1200px) {
+		width: calc((100% - 90px) / 3);
 	}
 }
 .portfolio-img-source {
 	@media screen and (min-width: 1200px) {
 		width: 370px;
 	}
+}
 
-	.portfolio-list-link {
-		position: relative;
-		overflow: hidden;
-	}
+.portfolio-list-link {
+	position: relative;
+	overflow: hidden;
+}
 
-	.portfolio-text-box__portfolio-title {
-		font-weight: 700;
-		font-size: 18px;
-		line-height: 2;
-		letter-spacing: 0.06em;
-		color: var(--text-color-main);
-	}
+.portfolio-text-box__portfolio-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+	color: var(--text-color-main);
+}
 
-	.portfolio-text-box__portfolio-item {
-		margin-top: 4px;
-		font-size: 16px;
-		line-height: 1.87;
-		letter-spacing: 0.03em;
-		color: var(--text-color-secondary);
-	}
+.portfolio-text-box__portfolio-item {
+	margin-top: 4px;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.03em;
+	color: var(--text-color-secondary);
 }
