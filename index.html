@@ -23,14 +23,13 @@
 	</head>
 	<body>
 		<!--Шапка-->
-		<!-- <header class="header-box">
+		<header class="header-box">
 			<div class="container header-container">
 				<nav class="nav-header">
-					<a href="" class="nav-header__logo link">
-						Web
-						<span class="nav-header__logo--accent">Studio</span>
+					<a href="" class="nav-header__logo link">Web<span class="nav-header__logo--accent">Studio</span>
 					</a>
 					
+				<div class="nav-right js-menu-container" id="mobile-menu">
 					<ul class="site-nav list">
 						<li class="site-nav-list">
 							<a href="./index.html" class="link site-nav-list__link site-nav-list__link--current">Cтудия</a>
@@ -42,11 +41,9 @@
 							<a href="" class="link site-nav-list__link">Контакты</a>
 						</li>
 					</ul>
-				</nav>
-
-				<div class="contact-text">
+					<div class="contact-text">
 					<ul class="nav-text list">
-						<li class="site-nav-list">
+						<li class="site-nav-list-contact">
 							<a href="mailto:info@devstudio.com" class="link site-nav-list__mail">
 								<svg class="icon-mail-one" width="16" height="12">
 									<use href="./images/icons.svg#icon-mail"></use>
@@ -54,7 +51,7 @@
 								info@devstudio.com
 							</a>
 						</li>
-						<li class="site-nav-list">
+						<li class="site-nav-list-contact">
 							<a href="tel:+380961111111" class="link site-nav-list__tel">
 								<svg class="icon-tel-one" width="10" height="16">
 									<use href="./images/icons.svg#icon-tel"></use>
@@ -64,20 +61,22 @@
 						</li>
 					</ul>
 				</div>
-				
-				<button type="button" class="header-mobile-menu__menu-close" data-mobile-menu-open>
+				</div>
+				</nav>
+			
+				<button type="button" class="header-mobile-menu__menu-close js-close-menu">
 					<svg class="header-mobile-menu__icon-closeblack" width="40" height="40">
 						<use href="./images/icons.svg#icon-menu"></use>
 					</svg>
 				</button>
-				<button class="header-mobile-menu__menu-open" type="button" data-mobile-menu-close>
+				<button class="header-mobile-menu__menu-open js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
 					<svg class="mob-menu__icon-cross" width="40" height="40">
 						<use href="./images/icons.svg#icon-close_24px"></use>
 					</svg>
 		
 				
 			</div>
-		</header> -->
+		</header>
 
 		<!--Основной заголовок-->
 		<main>
@@ -582,7 +581,13 @@
 				</form>
 			</div>
 		</div>
-
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
+		
 		<script src="./js/modal.js"></script>
 		<script src="./js/mobile-menu.js"></script>
 	</body>

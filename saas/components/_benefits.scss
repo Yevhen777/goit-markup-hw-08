@@ -11,16 +11,20 @@
 	overflow: hidden;
 }
 .section-info {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 }
 
 .adventages {
 	width: 100%;
-	@media screen and (min-width: 320px) {
-		max-width: 450px;
-		height: 120px;
-	}
+	max-width: 450px;
+	height: 120px;
+
 	@media screen and (min-width: 768px) {
 		max-width: 354px;
 		height: 120px;
@@ -84,25 +88,23 @@
 }
 
 .title-text__info {
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+
 	@media screen and (min-width: 320px) {
 		max-width: 450px;
-		font-size: 14px;
-		line-height: 1.71;
-		letter-spacing: 0.03em;
+
 		color: var(--text-color-secondary);
 	}
 	@media screen and (min-width: 768px) {
 		max-width: 354px;
-		font-size: 14px;
-		line-height: 1.71;
-		letter-spacing: 0.03em;
+
 		color: var(--text-color-secondary);
 	}
 	@media screen and (min-width: 1200px) {
 		max-width: 270px;
-		font-size: 14px;
-		line-height: 1.71;
-		letter-spacing: 0.03em;
+
 		color: var(--text-color-secondary);
 	}
 }
