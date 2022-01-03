@@ -16,7 +16,8 @@
 
 .hero-modal {
 	padding: 40px;
-	width: 528px;
+	max-width: 528px;
+	width: 100%;
 	height: 581px;
 	background-color: var(--background-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -92,6 +93,7 @@
 }
 .svg-input__modal-input {
 	width: 448px;
+	max-width: 100%;
 	height: 40px;
 	padding-left: 42px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
