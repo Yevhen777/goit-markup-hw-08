@@ -310,6 +310,12 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .list-info__benefits:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .list-info__benefits:not(:last-child) {
     margin-right: 30px;
@@ -346,12 +352,6 @@ body {
 @media screen and (max-width: 767px) {
   .title-text {
     text-align: center;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  .title-text__info {
-    margin-bottom: 30px;
   }
 }
 
@@ -511,6 +511,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 16px;
 }
 
 .icon-list-team {
@@ -586,7 +587,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color-secondary);
   text-align: center;
-  margin-bottom: 16px;
 }
 
 .section-clients {
@@ -1442,6 +1442,12 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer-container {
+    margin-bottom: 60px;
+  }
+}
+
 .subscription {
   margin-top: 60px;
 }
@@ -1465,7 +1471,6 @@ body {
 @media screen and (max-width: 767px) {
   .icon-footer__heading-footer {
     text-align: center;
-    margin-top: 60px;
     margin-bottom: 20px;
   }
 }

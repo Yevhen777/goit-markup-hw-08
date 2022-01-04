@@ -124,6 +124,12 @@
 	}
 }
 
+.footer-container {
+	@media screen and (max-width: 767px) {
+		margin-bottom: 60px;
+	}
+}
+
 .subscription {
 	margin-top: 60px;
 
@@ -135,7 +141,6 @@
 .icon-footer__heading-footer {
 	@media screen and (max-width: 767px) {
 		text-align: center;
-		margin-top: 60px;
 		margin-bottom: 20px;
 	}
 	@media screen and (min-width: 767px) {
