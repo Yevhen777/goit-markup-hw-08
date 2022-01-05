@@ -83,6 +83,9 @@
 }
 
 .site-nav {
+	// @media screen and (max-width: 767px) {
+	// 	margin-bottom: 465px;
+	// }
 	@media screen and (min-width: 768px) {
 		display: flex;
 		align-items: center;
@@ -172,6 +175,7 @@
 
 	display: flex;
 	justify-content: start;
+	// flex-wrap: wrap;
 
 	@media screen and (min-width: 768px) {
 		display: none;

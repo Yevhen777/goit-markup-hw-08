@@ -60,6 +60,9 @@
 }
 
 .portfolio-img {
+	@media screen and (max-width: 1199px) {
+		margin: -15px;
+	}
 	@media screen and (min-width: 1200px) {
 		display: flex;
 		flex-wrap: wrap;

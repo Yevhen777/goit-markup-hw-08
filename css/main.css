@@ -84,8 +84,8 @@ body {
 .hero-img {
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/imgmobile/imgheromobile1x.jpg");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/imgmobile/imgheromobile1x.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/imghero.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/imghero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -125,8 +125,8 @@ body {
 @media screen and (min-width: 769px) {
   .hero-img {
     max-width: 1600px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/imghero.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/imghero.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/imgherodask1x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/imgherodask1x.jpg");
   }
 }
 
@@ -431,16 +431,6 @@ body {
 
 .team-item {
   width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .team-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -860,6 +850,12 @@ body {
   padding: 20px 24px;
 }
 
+@media screen and (max-width: 1199px) {
+  .portfolio-img {
+    margin: -15px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .portfolio-img {
     display: -webkit-box;
@@ -988,6 +984,14 @@ body {
   transition: transform var(--animation-duration) var(--timing-function), -webkit-transform var(--animation-duration) var(--timing-function);
 }
 
+@media screen and (max-width: 1199px) {
+  .hero-modal {
+    max-width: 450px;
+    height: 609px;
+    width: 100%;
+  }
+}
+
 .hero-modal__modal-close {
   position: absolute;
   width: 30px;
@@ -1029,7 +1033,7 @@ body {
 .hero-modal__modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1, 15;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color-main);
@@ -1756,7 +1760,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .site-nav-list__mail {
-    margin-bottom: 10px;
     padding-top: 21px;
   }
 }
@@ -1774,6 +1777,12 @@ body {
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact {
+    margin-bottom: 10px;
   }
 }
 
