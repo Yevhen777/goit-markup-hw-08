@@ -3,18 +3,25 @@
 	padding: 6px 22px;
 }
 .item-btn {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	@media screen and (max-width: 1199px) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	@media screen and (min-width: 1200px) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 }
 
 .btn-all {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 40px;
+	// margin-bottom: 40px;
 
 	@media screen and (max-width: 767px) {
 		flex-wrap: wrap;
 		justify-content: flex-start;
+		margin-bottom: 40px;
 	}
 
 	@media screen and (min-width: 768px) {

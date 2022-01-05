@@ -702,9 +702,18 @@ body {
   padding: 6px 22px;
 }
 
-.item-btn {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .item-btn {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item-btn {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .btn-all {
@@ -714,7 +723,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 767px) {
@@ -724,6 +732,7 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-bottom: 40px;
   }
 }
 
