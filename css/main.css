@@ -749,7 +749,6 @@ body {
 }
 
 .portfolio-btn {
-  margin-left: 8px;
   margin-right: 8px;
 }
 
@@ -855,10 +854,6 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.btn-all {
-  margin-bottom: 56px;
 }
 
 .portfolio-text-box {
