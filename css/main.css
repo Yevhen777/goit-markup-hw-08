@@ -840,6 +840,9 @@ body {
 
 .portfolio-text-box {
   padding: 20px 24px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 @media screen and (max-width: 1199px) {
