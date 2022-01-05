@@ -429,10 +429,6 @@ body {
   }
 }
 
-.team-item {
-  width: 100%;
-}
-
 @media screen and (min-width: 768px) {
   .team-item {
     display: -webkit-box;
@@ -455,7 +451,16 @@ body {
   }
 }
 
-@media screen and (max-width: 479px) {
+.team-img {
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (max-width: 767px) {
   .team-img {
     margin-bottom: 30px;
   }
@@ -476,19 +481,6 @@ body {
 
 .team-img-source {
   width: 100%;
-}
-
-.team-img {
-  margin-left: auto;
-  margin-right: auto;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.team-img {
-  margin-bottom: 30px;
 }
 
 .icon-list-section {
@@ -1698,6 +1690,12 @@ body {
 }
 
 .nav-header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -1729,7 +1727,6 @@ body {
 
 .nav-header__logo--accent {
   color: var(--text-color-main);
-  padding: 24px 0;
   -webkit-transition: color var(--animation-duration) var(--timing-function);
   transition: color var(--animation-duration) var(--timing-function);
 }
@@ -2022,6 +2019,12 @@ body {
   border: 1px solid #ececec;
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav {
+    margin-bottom: 32px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
@@ -2096,6 +2099,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .site-nav-list__link {
+    padding: 0;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
@@ -2135,6 +2139,8 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
